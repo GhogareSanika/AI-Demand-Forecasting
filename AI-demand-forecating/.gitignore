@@ -11,3 +11,11 @@ __pycache__/
 node_modules/
 
 dist/
+
+# Generated and processed datasets
+data/processed/
+
+# Python files
+venv/
+__pycache__/
+.ipynb_checkpoints/
