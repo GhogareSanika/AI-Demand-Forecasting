@@ -7,3 +7,7 @@ joblib
 scikit-learn
 xgboost
 python-multipart
+pymongo
+dnspython
+pydantic-settings
+python-dotenv
