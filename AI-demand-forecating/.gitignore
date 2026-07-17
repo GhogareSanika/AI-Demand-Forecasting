@@ -19,7 +19,3 @@ data/processed/
 venv/
 __pycache__/
 .ipynb_checkpoints/
-
-data/processed/*.csv
-models/*.pkl
-forecasts/*.csv
