@@ -1,21 +1,7 @@
 venv/
-
 __pycache__/
-
+*.pyc
 .ipynb_checkpoints/
-
-*.pkl
-
 .env
-
-node_modules/
-
-dist/
-
-# Generated and processed datasets
-data/processed/
-
-# Python files
-venv/
-__pycache__/
-.ipynb_checkpoints/
+frontend/node_modules/
+frontend/dist/
