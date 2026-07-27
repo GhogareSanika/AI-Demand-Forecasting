@@ -40,7 +40,7 @@ class PredictionResponse(BaseModel):
     recommended_stock: float
     reorder_quantity: float
     stock_status: str
-    reorder_required: bool
+    reorder_required: bool = False
 
 
 class HealthResponse(BaseModel):

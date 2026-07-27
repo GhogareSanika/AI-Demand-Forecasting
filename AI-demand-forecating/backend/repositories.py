@@ -183,6 +183,7 @@ class PredictionRepository:
             serialize_document(document)
             for document in cursor
         ]
+    
 
     def get_dashboard_summary(
         self

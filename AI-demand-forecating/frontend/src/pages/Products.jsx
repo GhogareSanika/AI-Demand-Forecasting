@@ -1,13 +1,32 @@
-export default function Products(){
+import { useEffect, useState } from "react";
+import { getProducts } from "../services/productService";
 
-return(
+export default function Products() {
+  const [products, setProducts] = useState([]);
 
-<h1 className="text-3xl font-bold">
+  useEffect(() => {
+    loadProducts();
+  }, []);
 
-Products
+  const loadProducts = async () => {
+    try {
+      const data = await getProducts();
+      console.log(data);
+      setProducts(data);
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
-</h1>
+  return (
+    <div>
+      <h1>Products</h1>
 
-);
-
+      {products.map((product) => (
+        <div key={product.id}>
+          {product.product_name}
+        </div>
+      ))}
+    </div>
+  );
 }

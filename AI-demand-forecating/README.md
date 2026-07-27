@@ -10,7 +10,7 @@
 - [x] FastAPI backend
 - [x] MongoDB Atlas integration
 - [x] Product and prediction-history APIs
-- [ ] React frontend
+- [x] React frontend
 - [ ] Frontend-backend integration
 - [ ] Dashboard visualizations
 - [ ] Deployment

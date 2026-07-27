@@ -367,16 +367,12 @@ from backend.schemas import PredictionHistoryResponse
     "/predictions",
     response_model=list[PredictionHistoryResponse]
 )
-def get_prediction_history(
-    limit: int = 50
-) -> list[PredictionHistoryResponse]:
+def get_prediction_history(limit: int = 50):
     repository = get_prediction_repository()
 
-    safe_limit = min(max(limit, 1), 500)
+    predictions = repository.get_recent(limit)
 
-    predictions = repository.get_recent(
-        limit=safe_limit
-    )
+    print(predictions)   # <-- add this
 
     return [
         PredictionHistoryResponse(**prediction)

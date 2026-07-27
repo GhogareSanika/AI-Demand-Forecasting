@@ -2,7 +2,7 @@ import { Routes,Route } from "react-router-dom";
 
 import Dashboard from "../pages/Dashboard";
 import Products from "../pages/Products";
-import Prediction from "../pages/Predictions";
+import Prediction from "../pages/Prediction";
 import History from "../pages/History";
 import Settings from "../pages/Settings";
 
